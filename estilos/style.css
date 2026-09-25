@@ -23,7 +23,7 @@ main {
 
 section#login {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
 }
 
 h1 {
@@ -46,4 +46,16 @@ div#formulario {
     max-width: 300px;
     text-align: justify;
     padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    section#login {
+    flex-flow: column nowrap;
+}
+
+    div#imagem, div#formulario {
+        width: 100%;
+    }
+
 }
