@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: blueviolet;
+    background-image: linear-gradient(to bottom, blueviolet, lightblue);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -23,12 +23,18 @@ main {
 
 section#login {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row-reverse nowrap;
 }
 
 h1 {
+    text-align: center;
     padding: 10px;
 }
+
+p {
+    font-size: 0.8em;
+}
+
 img {
     max-width: 300px;
 }
@@ -49,6 +55,11 @@ div#formulario {
 }
 
 @media screen and (max-width: 600px) {
+
+    body {
+        background-image: none;
+        background-color: blueviolet;
+    }
 
     section#login {
     flex-flow: column nowrap;

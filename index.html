@@ -15,8 +15,17 @@
             <div id="formulario">
                 <h1>Teste de login</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, quibusdam dolorem provident libero quam atque, cum natus expedita eaque voluptatem eveniet, doloribus id laboriosam quidem amet ex vitae! Quos, sint.</p>
-                <form action="#" method="post">
+                <form action="#" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin">Login</label>
+                        <input type="email" name="login" id="ilogin" placeholder="seu email" autocomplete="email" required minlength="8">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
 
+                    <input type="submit" value="Entrar">
                 </form>
 
             </div>
